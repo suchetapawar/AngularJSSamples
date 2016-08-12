@@ -1,0 +1,15 @@
+<html ng-app>
+	<head>
+		<title>Welcome to Pre-school</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.js"></script>
+	</head>
+	<body>
+
+		<p text-align: center;>Welcome to ABC Preschool, 
+		</br>
+		<b>Education is a natural process carried out by the child and is not acquired by listening to words but by experiences in the environment
+		</b>
+		</p>
+	</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+	<head>
+		<meta charset="utf-8">
+		<title>ABC Pre-school</title>
+		<link rel="stylesheet" href="css/app.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.js"></script>
+        	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-route.js"></script>
+         	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-animate.js"></script>
+		<script src="app.js"></script>
+	</head>
+	<body>
+
+		<div id="header-wrapper" ng-controller="HeaderCtrl"> 
+			<span class="logo pull-left">{{appDetails.title}}</span>
+		        <span class="tagline pull-left">{{appDetails.tagline}}</span>
+            		<div class="nav-wrapper pull-left">
+                		<ul class="nav nav-pills">
+					<!--<li ng-class="active"><a href="#/welcome">Welcome</a></li>-->
+                    			<li ng-class="{active: nav.isActive('/welcome')}"><a href="#/welcome">Welcome</a></li>
+                    			<li ng-class="{active: nav.isActive('/progs')}"><a href="#/progs">Programs & Curriculum</a></li>
+					<li ng-class="{active: nav.isActive('/contactus')}"><a href="#/contactus">Contact Us</a></li>
+                		</ul>
+            		</div>
+		</div>
+
+		<div >
+				<b>"Education is a natural process carried out by the child and is not acquired by listening to words but by experiences in the environment" 
+</br>
+ - Dr. Maria Montessori
+				</b>
+			
+		</div>
+<br/>
+<br/>
+		<div ng-view class="container"></div>
+<!--<div ng-view></div>-->
+	</body>
+
+</html>

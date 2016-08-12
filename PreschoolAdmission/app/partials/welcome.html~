@@ -1,0 +1,17 @@
+<div id="ContentWrapper">
+
+	<!--<button class="btn btn-info pull-left" href="#"></button>-->
+
+	
+     	<button class="btn btn-info" ng-click="changeView('/getadmission')">Admissions</button>
+	
+	<button class="btn btn-info" ng-click="changeView('/scheduletour')">Schedule a Tour</button>
+	<!--<div class="nav-wrapper pull-left">
+                <ul class="nav nav-pills">
+                    <li ng-class="active"><a href="#">Schedule a Tour</a></li>
+                    <li ng-class="active"><a href="#/getadmission">Admissions</a></li>
+                </ul>
+        </div>-->
+
+
+</div>

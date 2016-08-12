@@ -1,0 +1,41 @@
+<div id="classListWrapper">
+	
+<div>
+
+Student Name: {{student.childname}}
+Student Age: {{student.age}}
+
+</div>
+	<ul class="list-unstyled">
+		<li class="class" ng-repeat="class in classes"
+			style="background: white url('imgs/{{class.imgUrl}}') no-repeat">
+			<div class="class-details clearfix">
+				<h3>Class {{class.number}}</h3>
+				
+				<ul class="list-unstyled list-inline">
+					<li>Rating: {{class.rating}}</li>
+					<li>Strength: {{class.strength}}</li>
+					<li>Teacher: {{class.teacher}}</li>
+					
+				</ul>
+				<p>{{class.details}}</p>
+				<ol ng-repeat="student in class.students">
+				<!--<li ng-repeat="student in class.students">-->
+				
+				<!--<ul class="list-unstyled list-inline">-->
+					
+					<li>Name: {{student.childname}}
+</br>
+					Parent's Name: {{student.parentname}}</li>
+				
+				</ol>
+				
+				
+				<button class="btn btn-info pull-right" ng-click="assignClass(student,class.number)">Confirm Class</button>
+			</div>
+		</li>
+	</ul>
+</div>
+
+
+
